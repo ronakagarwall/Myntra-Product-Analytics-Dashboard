@@ -23,8 +23,6 @@
 
 ## Key Insights
 
-## 🔍 Key Insights
-
 ### 1. Most expensive brand by marked price
 > **EARNSHAW** — ₹44,950 for its *"Men Leather Straps Automatic Motion Watch"*
 
