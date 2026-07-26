@@ -1,67 +1,173 @@
-# 🛍️ Myntra Product Analytics Dashboard
+# Myntra E-Commerce Analytics Dashboard
 
-*Excel Analytics & Interactive Reporting*
+An interactive Excel dashboard built to analyze Myntra's product catalog, pricing, discounts, customer ratings, and brand performance. This project demonstrates the complete analytics workflow; from data cleaning and exploratory analysis to KPI development and dashboard creation using Microsoft Excel.
 
-## Overview
-
-- 🧹 Prepared and transformed raw product data to improve accuracy and usability
-- 📈 Analyzed product pricing, discounts, brands, and categories using Pivot Tables and Excel formulas
-- 🎯 Created an interactive dashboard with slicers for efficient filtering and trend visualization
-
-## Tools Used
-
-`Microsoft Excel` `Pivot Tables` `Slicers` `Data Cleaning` `Data Analysis`
-
-## Dataset
-
-- 24,000+ Product Records
-- Myntra Fashion Dataset
+---
 
 ## Dashboard Preview
 
-<img width="1876" height="752" alt="Screenshot 2026-07-22 164804" src="https://github.com/user-attachments/assets/9baeb78f-a3e0-471d-9894-2fa5e99b7557" />
+![Dashboard Preview](Images/dashboard_preview.png)
 
+---
 
-## Key Insights
+## 📌 Project Overview
 
-### 1. Most expensive brand by marked price
-> **EARNSHAW** — ₹44,950 for its *"Men Leather Straps Automatic Motion Watch"*
+The goal of this project was to transform raw e-commerce data into an interactive dashboard that helps users understand product trends, pricing strategies, customer ratings, and brand performance.
 
-- **Method:** `MAX()` on marked price, filtered/grouped by brand
+The dashboard allows users to filter and explore data dynamically using slicers, making it easier to uncover meaningful business insights.
 
-### 2. Brand with the maximum number of products sold
-> **DressBerry** has the most products sold
-*(Note: actual sales figures weren't available in the dataset, so rating count was used as a proxy for sales volume — a necessary assumption, flagged here for transparency.)*
+---
 
- - **Method:** PivotTable — Brand × Sum(Rating Count)
+## Objectives
 
-### 3. Most selling product category
-> **Perfume and Body Mist**
+- Clean and validate raw product data
+- Create meaningful business KPIs
+- Analyze brand performance and pricing trends
+- Identify the most popular products based on customer engagement
+- Build an interactive Excel dashboard for decision-making
 
- - **Method:** PivotTable — Category × Sum(Rating Count)
+---
 
-### 4. Adidas vs. Nike vs. Mochi — which sold more?
-> **Mochi** leads with ~1,477 products sold among the three
+## 📂 Dataset Information
 
-- **Method:** Filtered PivotTable (Brand IN {Adidas, Nike, Mochi}) × Sum(Rating Count)
+**Source:** Myntra Product Dataset
 
-### 5. Most popular product name
-> **"Slim Fit Casual Shirt"** — appears ~260 times
+**Dataset Summary**
 
-- **Method:** `COUNTIF()` / PivotTable on Product Name
+- Total Products: **21,605**
+- Total Brands: **2,139**
+- File Format: **CSV**
 
-### 6. Brand with maximum discount (%)
-> **Hritika** — up to **90.01%** discount
+### Dataset Fields
 
-- **Method:** `MAX()` on discount %, grouped by brand
+- Product Name
+- Brand Name
+- Rating
+- Rating Count
+- Marked Price
+- Discounted Price
+- Sizes
+- Product Link
 
-### 7. Product categories with negligible discount
-> 13 categories show a **0.00%** maximum discount, including: key-chain, swim-tops, beard & moustache care, men's grooming kit, condoms, Patiala, free-gifts, rain-jacket, bibs, rain-suit, duvet-cover, shaving essentials, and robe
+---
 
-- **Method:** Filtered categories where `MAX(discount) = 0`
+## Data Cleaning
 
-### 8. Categories with average discount above 70%
-> **Anklets, Cufflinks, Floor Mats–Dhurries, and Patiala-and-Dupatta**
+Before building the dashboard, the dataset was cleaned and validated by:
 
-- **Method:** PivotTable — Category × Average(Discount %), filtered `> 70%`
+- Removing duplicate records
+- Checking for missing values
+- Validating ratings and prices
+- Standardizing brand names
+- Verifying pricing consistency
+- Creating calculated columns:
+  - Discount Amount
+  - Discount Percentage
+  - Price Range
+  - Rating Category
 
+---
+
+## 📈 Dashboard KPIs
+
+The dashboard highlights five key business metrics:
+
+- 📦 Total Products
+- 🏷️ Total Brands
+- ⭐ Average Rating
+- 💸 Average Discount Percentage
+- 💰 Overall Average Selling Price
+
+---
+
+## 📊 Dashboard Features
+
+The dashboard includes:
+
+- Top 10 Brands by Product Count
+- Top 10 Brands by Average Selling Price
+- Top 10 Brands by Average Discount Percentage
+- Product Rating Distribution
+- Top 10 Most Popular Products
+
+### Interactive Filters
+
+- Brand
+- Rating
+- Price Range
+
+---
+
+## 🔍 Key Insights
+
+- Roadster has the largest product catalog.
+- Tom Ford records the highest average selling price.
+- HRITIKA offers the highest average discount percentage.
+- Most products are rated between **4–5 stars**, indicating generally positive customer feedback.
+
+---
+
+## 🛠️ Tools & Skills
+
+**Tools**
+
+- Microsoft Excel
+- Pivot Tables
+- Pivot Charts
+- Slicers
+
+**Skills Demonstrated**
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- KPI Development
+- Dashboard Design
+- Data Visualization
+- Business Analysis
+
+---
+
+## 📁 Repository Structure
+
+```
+Myntra-ECommerce-Analytics-Dashboard
+│
+├── Dashboard
+│   └── Myntra_ECommerce_Analytics_Dashboard.xlsx
+│
+├── Dataset
+│   └── myntra_raw_dataset.csv
+│
+├── Images
+│   └── dashboard_preview.png
+│
+└── README.md
+```
+
+---
+
+## Getting Started
+
+1. Clone or download this repository.
+2. Open the Excel workbook from the **Dashboard** folder.
+3. Navigate to the **Dashboard** worksheet.
+4. Use the slicers to interact with the dashboard.
+
+---
+
+## 💡 Future Improvements
+
+- Build a Power BI version of the dashboard
+- Automate data cleaning using Power Query
+- Add advanced business KPIs
+- Connect to live data sources
+
+---
+
+## 👨‍💻 Author
+
+**Ronak Agarwall**
+
+If you found this project helpful or have any suggestions, feel free to connect or share your feedback.
+
+⭐ If you like this project, consider giving it a star!
