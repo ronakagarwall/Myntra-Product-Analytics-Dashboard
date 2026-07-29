@@ -100,10 +100,20 @@ The dashboard includes:
 
 ## 🔍 Key Insights
 
-- Roadster has the largest product catalog.
-- Tom Ford records the highest average selling price.
+- Roadster has the highest number of listed products(567), indicating a broad product portfolio.
+- Tom Ford records the highest average selling price among the top brands, reflecting a premium pricing strategy.
 - HRITIKA offers the highest average discount percentage.
 - Most products are rated between **4–5 stars**, indicating generally positive customer feedback.
+
+---
+
+## Business Recommendation
+
+- Maintain inventory for high-demand brands like Roadster.
+- Evaluate whether very high discounts are impacting profitability.
+- Promote highly rated products to improve customer trust and conversions.
+- Focus marketing campaigns on premium brands with higher average selling prices.
+- Monitor lower-rated products to identify quality improvement opportunities.
 
 ---
 
