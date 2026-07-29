@@ -155,15 +155,6 @@ Myntra-ECommerce-Analytics-Dashboard
 
 ---
 
-## 💡 Future Improvements
-
-- Build a Power BI version of the dashboard
-- Automate data cleaning using Power Query
-- Add advanced business KPIs
-- Connect to live data sources
-
----
-
 ## 👨‍💻 Author
 
 **Ronak Agarwall**
