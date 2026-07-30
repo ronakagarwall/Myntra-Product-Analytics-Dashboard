@@ -1,4 +1,4 @@
-# Myntra E-Commerce Analytics Dashboard
+# Myntra Product Analytics Dashboard
 
 An interactive Excel dashboard built to analyze Myntra's product catalog, pricing, discounts, customer ratings, and brand performance. This project demonstrates the complete analytics workflow; from data cleaning and exploratory analysis to KPI development and dashboard creation using Microsoft Excel.
 
@@ -12,7 +12,7 @@ An interactive Excel dashboard built to analyze Myntra's product catalog, pricin
 
 ## 📌 Project Overview
 
-The goal of this project was to transform raw e-commerce data into an interactive dashboard that helps users understand product trends, pricing strategies, customer ratings, and brand performance.
+The goal of this project was to transform raw e-commerce product data into an interactive dashboard that helps users understand product trends, pricing strategies, customer ratings, and brand performance.
 
 The dashboard allows users to filter and explore data dynamically using slicers, making it easier to uncover meaningful business insights.
 
@@ -140,10 +140,10 @@ The dashboard includes:
 ## 📁 Repository Structure
 
 ```
-Myntra-ECommerce-Analytics-Dashboard
+Myntra-Product-Analytics-Dashboard
 │
 ├── Dashboard
-│   └── Myntra_ECommerce_Analytics_Dashboard.xlsx
+│   └── Myntra_Product_Analytics_Dashboard.xlsx
 │
 ├── Dataset
 │   └── myntra_raw_dataset.csv
